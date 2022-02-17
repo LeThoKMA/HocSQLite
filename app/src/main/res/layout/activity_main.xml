@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtAge"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <Switch
+        android:id="@+id/btnAct"
+        android:layout_width="291dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:switchMinWidth="60dp"
+        android:text="Active Customer"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="43dp"
+            android:layout_height="58dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="#615C5C"
+            android:text="View All"
+            app:strokeColor="#837B7B"
+            />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="55dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:background="#8A8383"
+            android:text="Add"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
